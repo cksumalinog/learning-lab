@@ -19,3 +19,12 @@ p{
     border-radius: 15px;
     padding: 5px;
 }
+
+a{
+    border-color: rgb(0, 255, 94);
+    border-style: inset;
+    border-width: 2px;
+    text-decoration: none;
+    font-size: 8px;
+    padding: 2px;
+}
