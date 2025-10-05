@@ -1,0 +1,21 @@
+body{
+    background-color: rgb(244, 86, 123);
+    color: whitesmoke;
+}
+
+h1{
+    border-color: rgb(0, 255, 94);
+    border-width: 5px;
+    border-style: double;
+    border-style: dashed;
+    border-bottom-style:ridge;
+    border-top-style:ridge;
+}
+
+p{
+    border-style: outset;
+    border-width: 5px;
+    border-color: rgb(0, 255, 94);
+    border-radius: 15px;
+    padding: 5px;
+}

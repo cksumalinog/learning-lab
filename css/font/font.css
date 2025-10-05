@@ -1,0 +1,24 @@
+body{
+    background-color: #040404;
+}
+
+h1{
+    font-family: "Bebas Neue", "Times New Roman"; /* Bebas is the desired font of the webpage while the TNR is for when the users web doesnt support the Bebas. TNR is fallback font*/
+    font-size: 54px;
+    color: orange;
+}
+
+p{
+    font-family: Helvetica;
+    font-style: italic;
+    font-weight: 400; /*can be: font-weight: bold;*/
+    text-decoration: orange dashed underline;
+    color: rgb(255, 0, 255);
+}
+
+a{
+    font-family: Helvetica;
+    font-weight: bold;
+    text-decoration: none;
+    color: aqua;
+}
