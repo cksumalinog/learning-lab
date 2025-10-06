@@ -1,0 +1,32 @@
+body{
+    color: white;
+    background-color: rgb(34, 33, 33);
+    background-image: url(/css/background/images/FurnitureBackground.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position:  center;
+    background-size: cover;
+}
+
+h1{
+    background: linear-gradient(rgb(46, 46, 46), rgb(0, 0, 0, 20%));
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+p{
+    background: linear-gradient(rgb(46, 46, 46), rgb(0, 0, 0, 20%));
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+a{
+    font-family: Helvetica;
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
+    font-size: 25px;
+    background: linear-gradient(rgb(46, 46, 46), rgb(0, 0, 0, 20%));
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
