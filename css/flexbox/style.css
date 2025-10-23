@@ -1,0 +1,16 @@
+body{
+    height: 700px;
+    border-style: solid;
+    display: flex;
+    gap: 10px;
+}
+
+.box{
+    flex-shrink: 1;
+    height: 150px;
+    width: 150px;
+    background-color: rgb(255, 24, 255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
