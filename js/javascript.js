@@ -1,3 +1,5 @@
+/* variables
+
 let variable1 = "Kenzo";
 let variable2 = 2;
 let variable3 = 6;
@@ -12,3 +14,5 @@ console.log(variables);
 variables = 3;
 
 console.log(variables);
+*/
+let cartQuantity = 0;
