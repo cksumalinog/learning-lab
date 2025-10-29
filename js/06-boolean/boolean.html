@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Boolean</title>
+  </head>
+  <body>
+    <script>
+      console.log(4 > 32);
+      console.log(3 == "3.000");
+      console.log(3 === "3.000");
+      console.log(3 != "3.000"); // compares values only (ignores type)
+      console.log(3 !== "3.000"); // compares value AND type
+
+      if (16 >= 18) {
+        console.log("You are old enough");
+      } else if (19 < 18) {
+        console.log("you are near");
+      } else {
+        console.log("too young kiddo");
+      }
+
+      const age = 91;
+
+      if (12 < age && age < 18) {
+        console.log("you are a teenagar");
+      }
+      if (age <= 12) {
+        console.log("You are a kid");
+      } else {
+        console.log("youre old");
+      }
+
+      console.log(true || false);
+      console.log(!false);
+    </script>
+  </body>
+</html>
