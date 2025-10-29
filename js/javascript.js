@@ -15,4 +15,3 @@ variables = 3;
 
 console.log(variables);
 */
-let cartQuantity = 0;
