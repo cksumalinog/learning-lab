@@ -18,12 +18,20 @@ delete product.date;
 console.log(product);
 */
 
-const score = {
+let score = JSON.parse(localStorage.getItem("score")) || {
   wins: 0,
   losses: 0,
   ties: 0,
 };
-
+/*
+if (score === null) {
+  score = {
+    wins: 0,
+    losses: 0,
+    ties: 0,
+  };
+}
+*/
 function playGame(playerMove) {
   const computerMove = pickComputerMove();
 
@@ -56,6 +64,7 @@ function playGame(playerMove) {
     score.losses = 0;
     score.ties = 0;
     score.wins = 0;
+    localStorage.removeItem("score");
   }
 
   if (result === "You Win!") {
@@ -65,6 +74,8 @@ function playGame(playerMove) {
   } else if (result === "Tie.") {
     score.ties += 1;
   }
+
+  localStorage.setItem("score", JSON.stringify(score));
 
   alert(
     `You picked ${playerMove}. Computer picked ${computerMove}. ${result}
