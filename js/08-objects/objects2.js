@@ -43,7 +43,7 @@ console.log(object2);
 const object3 = {
   message: "Bad Job",
 };
-console.log(object3 === object1);
+//console.log(object3 === object1);
 
 const object4 = {
   message: "Bad Job",

@@ -9,3 +9,21 @@ console.log(product.price);
 
 product["delivery-time"] = "3 days";
 console.log(product);
+
+const product01 = {
+  name: "Laptop",
+  price: 2000,
+};
+const product02 = {
+  name: "Desktop",
+  price: 5000,
+};
+
+function comparePrice(product01, product2) {
+  if (product01.price < product02.price) {
+    return product01;
+  } else {
+    return product02;
+  }
+}
+console.log(comparePrice(product01, product02));
