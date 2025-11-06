@@ -28,8 +28,22 @@ function comparePrice(product01, product2) {
 }
 console.log(comparePrice(product01, product02));
 
+/*
 function isSameProduct(product01, product02) {
   var isEqual = product01 === product02;
   return isEqual;
 }
 console.log(isSameProduct(product01.name, product02.name));
+*/
+
+function isSameProduct(product01, product02) {
+  if (
+    product01.price === product02.price &&
+    product01.name === product02.name
+  ) {
+    return true;
+  } else {
+    return false;
+  }
+}
+console.log(isSameProduct(product01, product02));
