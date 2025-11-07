@@ -47,3 +47,8 @@ function isSameProduct(product01, product02) {
   }
 }
 console.log(isSameProduct(product01, product02));
+
+let text = "Good Morning";
+console.log(text.toLowerCase());
+
+console.log("test".repeat(2));
