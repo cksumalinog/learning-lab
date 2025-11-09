@@ -28,4 +28,4 @@ console.log(Math.round(2.2));
 console.log(Math.round(2.8));
 
 console.log(((2095 + 799) * 0.1) / 100);
-console.log(Math.round((2095 + 799) * 0.1) / 100);
+console.log(Math.round((2095 + 799) * 0.1) / 100); // this is to avoid the 3 decimals in the previous code. math round the cents form of the money after that convert it back to its orignal value which is dollar
