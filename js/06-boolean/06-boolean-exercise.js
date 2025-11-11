@@ -91,7 +91,31 @@ const randomNumber = Math.random();
  */
 
 // 6j. (Challenge) Instead of using if-statements in the previous exercises, try switching them into ternary operators (condition ? A : B).
+
 const result = randomNumber < 0.5 ? "heads" : "tails";
 
 const guess = "heads";
 console.log(guess === result ? "You win!" : "You lose!");
+
+// Truthy Values
+
+// Falsy Values
+/**
+ * false
+ * 0
+ * '' (empty string)
+ * NaN - Not a Number
+ * undefined - it doesnt have a value
+ * null
+ *
+ *[Any valus that are not in here are truthy values]
+ */
+
+/** Shortcuts for if-statements
+ *
+ *   - Ternary Operator ? :
+ *   - Guard Operator &&
+ *   - Default Operator ||
+ */
+
+null ? console.log("truthy") : console.log("falsy");
