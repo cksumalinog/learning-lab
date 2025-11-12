@@ -112,7 +112,7 @@ console.log(guess === result ? "You win!" : "You lose!");
  */
 
 /** Shortcuts for if-statements
- *
+ *(It can be saved in a variable)
  *   - Ternary Operator ? :
  *   - Guard Operator &&
  *   - Default Operator ||
