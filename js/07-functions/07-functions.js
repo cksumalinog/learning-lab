@@ -22,3 +22,11 @@ function greet(name) {
   }
 }
 greet();
+
+// challenge from CHATGPT
+findLargest(3, 4, 5);
+function findLargest(num1, num2, num3) {
+  const largestNum = Math.max(num1, num2, num3);
+  console.log(largestNum);
+  return largestNum;
+}
