@@ -52,3 +52,15 @@ let text = "Good Morning";
 console.log(text.toLowerCase());
 
 console.log("test".repeat(2));
+
+const student = {
+  firstName: "Clarence Kenzo",
+  lastName: "Sumalinog",
+};
+
+function getFullName(student) {
+  const firstName = student.firstName;
+  const lastName = student.lastName;
+  return firstName + " " + lastName;
+}
+console.log(getFullName(student));
