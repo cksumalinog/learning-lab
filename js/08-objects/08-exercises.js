@@ -64,3 +64,18 @@ function getFullName(student) {
   return firstName + " " + lastName;
 }
 console.log(getFullName(student));
+
+function isAdult(person) {
+  const ageVerify = person.age;
+  if (person.age >= 18) {
+    return "Adult";
+  } else {
+    return "Minor";
+  }
+}
+
+const person = {
+  name: "Kylie",
+  age: 18,
+};
+console.log(isAdult(person));
