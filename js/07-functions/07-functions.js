@@ -22,3 +22,6 @@ function greet(name) {
   }
 }
 greet();
+
+// Return - gets a value out of a function
+// Parameter - puts a value into a function

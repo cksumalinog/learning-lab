@@ -52,3 +52,14 @@ let text = "Good Morning";
 console.log(text.toLowerCase());
 
 console.log("test".repeat(2));
+
+const myFruit = {
+  name: "apple",
+  color: "red",
+  quantity: 5,
+};
+console.log(myFruit.name);
+
+myFruit.quantity = 8;
+myFruit.isRipe = true;
+console.log(myFruit);
