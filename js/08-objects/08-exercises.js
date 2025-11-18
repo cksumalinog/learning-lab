@@ -53,6 +53,7 @@ console.log(text.toLowerCase());
 
 console.log("test".repeat(2));
 
+<<<<<<< HEAD
 const myFruit = {
   name: "apple",
   color: "red",
@@ -63,3 +64,31 @@ console.log(myFruit.name);
 myFruit.quantity = 8;
 myFruit.isRipe = true;
 console.log(myFruit);
+=======
+const student = {
+  firstName: "Clarence Kenzo",
+  lastName: "Sumalinog",
+};
+
+function getFullName(student) {
+  const firstName = student.firstName;
+  const lastName = student.lastName;
+  return firstName + " " + lastName;
+}
+console.log(getFullName(student));
+
+function isAdult(person) {
+  const ageVerify = person.age;
+  if (person.age >= 18) {
+    return "Adult";
+  } else {
+    return "Minor";
+  }
+}
+
+const person = {
+  name: "Kylie",
+  age: 18,
+};
+console.log(isAdult(person));
+>>>>>>> 554c35074eb36468cf77c3cdebed7d3178216cf4

@@ -23,5 +23,15 @@ function greet(name) {
 }
 greet();
 
+<<<<<<< HEAD
 // Return - gets a value out of a function
 // Parameter - puts a value into a function
+=======
+// challenge from CHATGPT
+findLargest(3, 4, 5);
+function findLargest(num1, num2, num3) {
+  const largestNum = Math.max(num1, num2, num3);
+  console.log(largestNum);
+  return largestNum;
+}
+>>>>>>> 554c35074eb36468cf77c3cdebed7d3178216cf4
