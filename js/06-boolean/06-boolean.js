@@ -53,3 +53,19 @@ console.log(message);
 
 const currency = false || "USD";
 console.log(currency);
+
+function canEnter(age, hasID, isVIP) {
+  if (age >= 18 && hasID) {
+    return "Access Granted";
+  } else if (isVIP && hasID) {
+    return "Access Granted";
+  } else if (age < 18) {
+    return "Access Denied: Age Restriction";
+  } else if (!hasID) {
+    return "Access Denied: Invalid ID";
+  }
+}
+console.log(canEnter(20, true, false)); // Access Granted
+console.log(canEnter(16, true, false)); // Access Denied: Age Restriction
+console.log(canEnter(25, false, true)); // Access Denied: Invalid ID
+console.log(canEnter(17, true, true));
