@@ -42,12 +42,10 @@ function convertTemperature(degrees, unit) {
 }
 console.log(convertTemperature(25, "C"));
 console.log(convertTemperature(86, "F"));
-
-// Create a function convertLength(length, from, to) that takes a number and a unit ('km' or 'miles') and converts the length to another unit ('km' or 'miles'). Note: 1 mile = 1.6 km (approximately).
+// 7g. Create a function convertLength(length, from, to) that takes a number and a unit ('km' or 'miles') and converts the length to another unit ('km' or 'miles'). Note: 1 mile = 1.6 km (approximately).
 // convertLength(50, 'miles', 'km') => '80 km'
-//convertLength(32, 'km', 'miles') => '20 miles'
-//convertLength(50, 'km', 'km') => '50 km'
-
+// convertLength(32, 'km', 'miles') => '20 miles'
+// convertLength(50, 'km', 'km') => '50 km'
 function convertLength(length, from, to) {
   if (to === "miles" && from === "km") {
     const results = length / 1.6;
@@ -62,8 +60,34 @@ function convertLength(length, from, to) {
     return `Invalid Unit: ${from} or ${to}`;
   }
 }
-
 console.log(convertLength(32, "km", "miles"));
 console.log(convertLength(50, "miles", "km"));
 console.log(convertLength(50, "km", "km"));
 console.log(convertLength(50, "ksm", "km"));
+// 7h. Update convertLength to support converting between km, miles, and also feet. Note: 1 mile = 5280 ft, 1 km = 3281 ft (approximately).
+// convertLength(5, 'miles', 'km') => '8 km'
+// convertLength(5, 'miles', 'ft') => '26400 ft'
+// convertLength(5, 'km', 'ft') => '16405 ft'
+function convertLength(length, from, to) {
+  if (to === "miles" && from === "km") {
+    const result = length / 1.6;
+    return `${result} miles`;
+  } else if (to === "km" && from === "miles") {
+    const result = length * 1.6;
+    return `${result} km`;
+  } else if (to === "ft" && from === "km") {
+    const result = length * 3281;
+    return `${result} ft`;
+  } else if (to === "ft" && from === "miles") {
+    const result = length * 5280;
+    return `${result} ft`;
+  } else if (to === from) {
+    const result = length * 1;
+    return `${result} km`;
+  } else {
+    return `Invalid Unit: ${from} or ${to}`;
+  }
+}
+console.log(convertLength(5, "miles", "km"));
+console.log(convertLength(5, "miles", "ft"));
+console.log(convertLength(5, "km", "ft"));
