@@ -42,3 +42,28 @@ function convertTemperature(degrees, unit) {
 }
 console.log(convertTemperature(25, "C"));
 console.log(convertTemperature(86, "F"));
+
+// Create a function convertLength(length, from, to) that takes a number and a unit ('km' or 'miles') and converts the length to another unit ('km' or 'miles'). Note: 1 mile = 1.6 km (approximately).
+// convertLength(50, 'miles', 'km') => '80 km'
+//convertLength(32, 'km', 'miles') => '20 miles'
+//convertLength(50, 'km', 'km') => '50 km'
+
+function convertLength(length, from, to) {
+  if (to === "miles" && from === "km") {
+    const results = length / 1.6;
+    return `${results} miles`;
+  } else if (to === "km" && from === "miles") {
+    const results = length * 1.6;
+    return `${results} km`;
+  } else if (to === from) {
+    const results = length * 1;
+    return `${results} km`;
+  } else {
+    return `Invalid Unit: ${from} or ${to}`;
+  }
+}
+
+console.log(convertLength(32, "km", "miles"));
+console.log(convertLength(50, "miles", "km"));
+console.log(convertLength(50, "km", "km"));
+console.log(convertLength(50, "ksm", "km"));
