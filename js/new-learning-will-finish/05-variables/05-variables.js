@@ -18,7 +18,6 @@
 //variable1 = variable1 + 1;
 //console.log(variable1);
 
-const variable2 = 67;
-variable2 = 2;
+//const variable2 = 67; const cant be changed or reassigned.
 
 let cartQuantity = 0;
