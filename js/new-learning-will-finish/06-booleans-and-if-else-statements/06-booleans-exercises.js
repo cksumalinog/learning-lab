@@ -24,3 +24,26 @@ if ((age <= 6 || age >= 65) && !isHoliday) {
 } else {
   console.log("No discount");
 }
+
+// 6.f
+const randomNum = Math.random();
+const result = randomNum < 0.5 ? "heads" : "tails";
+console.log(result);
+
+// 6.g
+// 6.h
+//if (randomNum < 0.5) {
+//  result = "heads";
+//} else {
+//  result = "tails";
+//}
+
+// 6.i
+const guess = "heads";
+console.log(guess === result ? "You win!" : "You lose!");
+//if (guess === result) {
+//  console.log("You win!");
+//} else {
+//  console.log("You lose!");
+//}
+// 6.j
