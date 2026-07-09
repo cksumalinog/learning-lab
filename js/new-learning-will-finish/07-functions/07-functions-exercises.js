@@ -67,3 +67,27 @@ console.log(convertLength(50, "miles", "miles"));
 console.log(convertLength(5, "miles", "ft"));
 console.log(convertLength(5, "km", "ft"));
 console.log(convertLength(5, "km", "ft2"));
+
+// 7.j this is the practice done for the 07-functions-exercises.html
+let calculation = "";
+function updateCalculation(value) {
+  calculation += value;
+  console.log(calculation);
+}
+
+// 7.k
+let cartQuantity = 0;
+function updateCartQuantity(value) {
+  if (cartQuantity + value > 10) {
+    alert("The cart is full");
+    return;
+  }
+
+  if (cartQuantity + value < 0) {
+    alert("Not enough items in the cart");
+    return;
+  }
+
+  cartQuantity += value;
+  console.log(`Cart quantity: ${cartQuantity}`);
+}

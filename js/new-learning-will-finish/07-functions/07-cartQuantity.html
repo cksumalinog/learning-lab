@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="/new-learning-will-finish/07-functions/07-functions-exercises.js"></script>
+  </head>
+  <body>
+    <button onclick="console.log(`Cart quantity: ${cartQuantity}`)">
+      Show Quantity
+    </button>
+    <button onclick="updateCartQuantity(1)">Add to Cart</button>
+    <button onclick="updateCartQuantity(2)">+2</button>
+    <button onclick="updateCartQuantity(3)">+3</button>
+    <button onclick="updateCartQuantity(4)">+4</button>
+    <button onclick="updateCartQuantity(5)">+5</button>
+    <button onclick="updateCartQuantity(-1)">Remove from cart</button>
+    <button onclick="updateCartQuantity(-2)">-2</button>
+    <button onclick="updateCartQuantity(-3)">-3</button>
+    <button
+      onclick="
+        cartQuantity = 0;
+        console.log('The cart was reset.');
+        console.log(`Cart quantity: ${cartQuantity}`);
+      "
+    >
+      Reset Cart
+    </button>
+  </body>
+</html>
